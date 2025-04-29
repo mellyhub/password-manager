@@ -13,3 +13,4 @@ accounts.txt
 *.tmp
 *.log
 *.lock
+password-manager.sln

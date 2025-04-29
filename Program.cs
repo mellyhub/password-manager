@@ -13,6 +13,7 @@ class Program
             Console.WriteLine("1. Add Account");
             Console.WriteLine("2. View Accounts");
             Console.WriteLine("3. Save & Exit");
+            // TODO: Add a delete option
             Console.Write("Select an option: ");
 
             string choice = Console.ReadLine();

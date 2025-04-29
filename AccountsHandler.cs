@@ -18,6 +18,7 @@ public class Account
 
 public static class AccountsHandler
 {
+    // TODO: Implement encryption
     private const string FilePath = "accounts.txt";
 
     public static List<Account> LoadAccounts()
@@ -45,9 +46,9 @@ public static class AccountsHandler
             File.Create(FilePath).Close();
         }
         Console.Write("\nEnter account name:\n");
-        string name = Regex.Replace(Console.ReadLine(), @"\s+", string.Empty);
-        Console.Write("Enter password:\n");
-        string password = Regex.Replace(Console.ReadLine(), @"\s+", string.Empty);
+        string name = Regex.Replace(Console.ReadLine(), @"\s+", string.Empty);  // Remove whitespace
+        Console.Write("\nEnter password:\n");
+        string password = Regex.Replace(Console.ReadLine(), @"\s+", string.Empty);  // Remove whitespace
         accounts.Add(new Account { Name = name, Password = password });
         Console.WriteLine("Account added.");
     }
