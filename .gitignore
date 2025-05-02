@@ -14,3 +14,4 @@ accounts.txt
 *.log
 *.lock
 password-manager.sln
+appsettings.json
